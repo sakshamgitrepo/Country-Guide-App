@@ -7,17 +7,14 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: fantasy;
+    font-family: cursive;
     background-image: url("https://source.unsplash.com/1600x900/?landscape");
+    background-color: rgb(169, 185, 125);
+    background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
   }
-  
-  .a {
-    margin: 7px 0px;
-    font-weight: 500;
-    font-family: Georgia, "Times New Roman", Times, serif;
-  }
+ 
   
   .info {
     width: 100%;
@@ -27,21 +24,26 @@
     margin: 30px 0px;
   }
   .prop {
-    background-color: rgba(240, 248, 255, 0.575);
+    background-color: rgba(255, 255, 255, 0.692);
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 2px 2px 3px 3px gray;
   }
+  .prop .a {
+    margin: 7px 0px;
+    font-family: cursive;
+  }
+  
   .icon {
     width: 200px;
     margin-bottom: 1rem;
   }
   .card {
     padding: 20px;
-    background-color: rgba(245, 245, 245, 0.781);
+    background-color: rgba(245, 245, 245, 0.692);
     border-radius: 30px;
     width: 400px;
-    box-shadow: inset 0px 0px 5px 5px rgba(163, 156, 156, 0.9);
+    box-shadow: inset 0px 0px 7px 7px rgba(151, 148, 148, 0.9);
   }
   .search {
     display: flex;
@@ -56,6 +58,7 @@
     border-bottom: 2px solid rgb(26, 25, 25);
     font-size: 1rem;
     width: 70%;
+    font-size:1.2rem;
     font-family: Georgia, "Times New Roman", Times, serif;
   }
   
@@ -89,7 +92,7 @@
     visibility: visible;
     content: "Loading...";
     position: absolute;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-family: cursive;
     font-weight: 600;
     transform: translate(50px, -50px);
   }

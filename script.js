@@ -31,11 +31,11 @@ function display(data) {
  
 }
 document.querySelector("button").addEventListener('click',()=>{
-    fetched(inputval.value)
+    fetched(inputval.value.trim())
 })
 document.querySelector("input").addEventListener('keypress',(e)=>{
     if (e.key==="Enter") {
-        fetched(inputval.value) 
+        fetched(inputval.value.trim()) 
     }
 })
 fetched('India')
