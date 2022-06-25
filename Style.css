@@ -97,9 +97,23 @@
     transform: translate(50px, -50px);
   }
   
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 550px) {
     .card {
       width: 70%;
+      height: auto;
+    }
+    .searchbox{
+      font-size:1rem;
+    }
+    .info{
+      font-size: small;
+    }
+    .prop .a{
+      font-size: 1rem;
+    }
+    button{
+      padding: 5px;
+      font-size: .7rem;
     }
   }
   
