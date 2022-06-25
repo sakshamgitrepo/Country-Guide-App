@@ -8,21 +8,21 @@ function fetched(count) {
 
 function display(data) {
   document.querySelector(".icon").src = `${data[0].flags.png}`;
-  document.querySelector(".name").innerText = `${data[0].name.common}`;
+  document.querySelector(".name").innerText = `${data[0].name.common.toUpperCase()}`;
   document.querySelector(
     ".capital"
-  ).innerText = `Capital : ${data[0].capital[0]}`;
+  ).innerText = `CAPITAL : ${data[0].capital[0].toUpperCase()}`;
   document.querySelector(
     ".continent"
-  ).innerText = `Continent : ${data[0].continents[0]}`;
+  ).innerText = `CONTINENT : ${data[0].continents[0].toUpperCase()}`;
   document.querySelector(
     ".population"
-  ).innerText = `Population : ${data[0].population}`;
-  document.querySelector(".currency").innerText = `Currency : ${
-    Object.keys(data[0].currencies)[0]
+  ).innerText = `POPULATION : ${data[0].population}`;
+  document.querySelector(".currency").innerText = `CURRENCY : ${
+    (Object.keys(data[0].currencies)[0]).toUpperCase()
   }`;
-  document.querySelector(".lang").innerText = `Language : ${
-    Object.values(data[0].languages)[0]
+  document.querySelector(".lang").innerText = `LANGUAGE : ${
+    (Object.values(data[0].languages)[0]).toUpperCase()
   }`;
   document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?"+data[0].name.common+"')";
   document.querySelector('.card2').classList.remove('load')
