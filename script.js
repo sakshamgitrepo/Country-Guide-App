@@ -7,6 +7,8 @@ function fetched(count) {
 }
 
 function display(data) {
+console.log(data);
+console.log(Object.values(data[0].currencies)[0].symbol);
   document.querySelector(".icon").src = `${data[0].flags.png}`;
   document.querySelector(".name").innerText = `${data[0].name.common.toUpperCase()}`;
   document.querySelector(
@@ -20,7 +22,7 @@ function display(data) {
   ).innerText = `POPULATION : ${data[0].population}`;
   document.querySelector(".currency").innerText = `CURRENCY : ${
     (Object.keys(data[0].currencies)[0]).toUpperCase()
-  }`;
+  } - ${Object.values(data[0].currencies)[0].symbol}`;
   document.querySelector(".lang").innerText = `LANGUAGE : ${
     (Object.values(data[0].languages)[0]).toUpperCase()
   }`;
