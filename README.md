@@ -5,6 +5,7 @@ This is Api based project which shows country's basic information like Flag, Pop
 
 Technologies
 -------------
-HTML5
-CSS3
-Javascript
+HTML5, 
+CSS3, 
+Javascript, 
+API used : https://restcountries.com/
